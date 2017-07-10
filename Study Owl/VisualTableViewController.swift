@@ -9,7 +9,8 @@
 import UIKit
 import SafariServices
 class VisualTableViewController: UITableViewController {
-
+    
+    let website = "google.com"
     let math = ["http://www.commoncoresheets.com/Operations.php", "http://www.coolmath.com/prealgebra/05-order-of-operations/05-order-of-operations-parenthesis-PEMDAS-04"]
     let mathTitles = ["Order of Operations Worksheet", "Order of Operations Picture Lesson"]
     
