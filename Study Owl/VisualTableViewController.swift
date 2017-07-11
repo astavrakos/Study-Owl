@@ -10,9 +10,14 @@ import UIKit
 import SafariServices
 class VisualTableViewController: UITableViewController {
     
-    let website = "google.com"
+   var myClass = ""
     let math = ["http://www.commoncoresheets.com/Operations.php", "http://www.coolmath.com/prealgebra/05-order-of-operations/05-order-of-operations-parenthesis-PEMDAS-04"]
+    let science = ["https://google.com"]
+    let english = ["https://quizlet.com"]
+    let socialStudies = ["https://bing.com"]
     let mathTitles = ["Order of Operations Worksheet", "Order of Operations Picture Lesson"]
+    
+    var subject = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +27,18 @@ class VisualTableViewController: UITableViewController {
         return mathTitles.count
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var url = ""
+        var row = 0
+        
+        for websites in math
+        {
+            url = math[row]
+            row += 1
+        }
+        
+        UIApplication.shared.openURL(URL(string: url)!)
+    }
     
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")

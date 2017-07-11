@@ -11,10 +11,19 @@ import SafariServices
 
 class VisualViewController: UIViewController {
 
- 
+    var myClass = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
+    @IBAction func onMathTapped(_ sender: Any) {
+       myClass = "math"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! VisualTableViewController
+        dvc.myClass = self.myClass
+    }
 }
