@@ -11,19 +11,29 @@ import SafariServices
 
 class VisualViewController: UIViewController {
 
-    var myClass = ""
-    
+    var myClass = OwlClass()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func onMathTapped(_ sender: Any) {
-       myClass = "math"
+        myClass.name = "math"
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "VisualTableViewController") as! VisualTableViewController
+        dvc.myClass = self.myClass
+        self.present(dvc, animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! VisualTableViewController
+    
+    @IBAction func onEnglishTapped(_ sender: Any) {
+        myClass.name = "english"
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "VisualTableViewController") as! VisualTableViewController
         dvc.myClass = self.myClass
+        self.present(dvc, animated: true, completion: nil)
     }
+  
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let dvc = segue.destination as! VisualTableViewController
+//        dvc.myClass = self.myClass
+//    }
 }
