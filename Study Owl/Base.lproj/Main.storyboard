@@ -124,7 +124,8 @@
                                 <rect key="frame" x="117" y="138" width="141" height="38"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="Zbu-O0-Img"/>
+                                    <constraint firstAttribute="width" constant="141" id="88j-6E-ahY"/>
+                                    <constraint firstAttribute="height" constant="38" id="9Zt-F5-fNL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
                                 <state key="normal" title="Math">
@@ -135,48 +136,36 @@
                                     <segue destination="qRN-1I-FRR" kind="show" id="Sep-76-6Ig"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBK-cV-vxa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBK-cV-vxa">
                                 <rect key="frame" x="117" y="224" width="141" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="Gvd-bN-tcO"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
                                 <state key="normal" title="English">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNe-tw-hPR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNe-tw-hPR">
                                 <rect key="frame" x="117" y="329" width="141" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="dmB-US-Ppk"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
                                 <state key="normal" title="Science">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw9-AK-0KI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw9-AK-0KI">
                                 <rect key="frame" x="83" y="430" width="208" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="wDM-Fa-dqx"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
                                 <state key="normal" title="Social Studies">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVu-qk-uff">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVu-qk-uff">
                                 <rect key="frame" x="13" y="575" width="349" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="Rsy-06-4ya"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
                                 <state key="normal" title="Tips for Visual Learners">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -186,13 +175,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="aFC-GG-M6l" secondAttribute="trailing" id="56Z-WN-5ZB"/>
-                            <constraint firstItem="uvs-4i-hgl" firstAttribute="top" secondItem="T1m-xb-v18" secondAttribute="bottom" constant="491" id="I7Y-kh-tDZ"/>
-                            <constraint firstItem="T1m-xb-v18" firstAttribute="top" secondItem="BKd-bQ-OrF" secondAttribute="bottom" constant="74" id="SXO-xk-udx"/>
-                            <constraint firstItem="aFC-GG-M6l" firstAttribute="leading" secondItem="TaJ-gH-2fK" secondAttribute="leading" id="fkW-Dl-9tV"/>
-                            <constraint firstItem="aFC-GG-M6l" firstAttribute="bottom" secondItem="uvs-4i-hgl" secondAttribute="top" id="g8M-gX-bHG"/>
-                            <constraint firstItem="aFC-GG-M6l" firstAttribute="centerX" secondItem="T1m-xb-v18" secondAttribute="centerX" id="t29-g5-xiG"/>
-                            <constraint firstItem="aFC-GG-M6l" firstAttribute="top" secondItem="BKd-bQ-OrF" secondAttribute="bottom" id="x73-ar-oe4"/>
+                            <constraint firstItem="T1m-xb-v18" firstAttribute="leading" secondItem="QBK-cV-vxa" secondAttribute="leading" id="2rD-N2-tTy"/>
+                            <constraint firstItem="QBK-cV-vxa" firstAttribute="top" secondItem="T1m-xb-v18" secondAttribute="bottom" constant="48" id="4ug-hq-5fr"/>
+                            <constraint firstAttribute="trailing" secondItem="aFC-GG-M6l" secondAttribute="trailing" id="7Su-m4-bKs"/>
+                            <constraint firstItem="rNe-tw-hPR" firstAttribute="top" secondItem="QBK-cV-vxa" secondAttribute="bottom" constant="50" id="GIs-Eo-rVH"/>
+                            <constraint firstItem="QBK-cV-vxa" firstAttribute="leading" secondItem="rNe-tw-hPR" secondAttribute="leading" id="OwR-8n-wbS"/>
+                            <constraint firstItem="QBK-cV-vxa" firstAttribute="trailing" secondItem="rNe-tw-hPR" secondAttribute="trailing" id="Pcw-aM-5Qn"/>
+                            <constraint firstItem="rNe-tw-hPR" firstAttribute="centerX" secondItem="Hw9-AK-0KI" secondAttribute="centerX" id="R1b-tV-aL4"/>
+                            <constraint firstItem="Hw9-AK-0KI" firstAttribute="top" secondItem="rNe-tw-hPR" secondAttribute="bottom" constant="46" id="Udd-m5-AHt"/>
+                            <constraint firstItem="aFC-GG-M6l" firstAttribute="leading" secondItem="TaJ-gH-2fK" secondAttribute="leading" id="Zv3-gQ-fYc"/>
+                            <constraint firstItem="Hw9-AK-0KI" firstAttribute="centerX" secondItem="VVu-qk-uff" secondAttribute="centerX" id="djs-Ps-9EN"/>
+                            <constraint firstItem="T1m-xb-v18" firstAttribute="top" secondItem="BKd-bQ-OrF" secondAttribute="bottom" constant="74" id="gFx-wc-MHo"/>
+                            <constraint firstItem="uvs-4i-hgl" firstAttribute="top" secondItem="VVu-qk-uff" secondAttribute="bottom" constant="37" id="iVJ-Kp-w77"/>
+                            <constraint firstItem="aFC-GG-M6l" firstAttribute="top" secondItem="BKd-bQ-OrF" secondAttribute="bottom" id="if1-VM-AFt"/>
+                            <constraint firstItem="T1m-xb-v18" firstAttribute="trailing" secondItem="QBK-cV-vxa" secondAttribute="trailing" id="jDM-gG-mBI"/>
+                            <constraint firstItem="aFC-GG-M6l" firstAttribute="bottom" secondItem="uvs-4i-hgl" secondAttribute="top" id="tRH-ac-H8e"/>
+                            <constraint firstItem="aFC-GG-M6l" firstAttribute="centerX" secondItem="Hw9-AK-0KI" secondAttribute="centerX" id="xTq-oi-5sE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cfv-EU-kR2"/>
