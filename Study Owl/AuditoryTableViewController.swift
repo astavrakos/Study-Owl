@@ -9,6 +9,8 @@
 import UIKit
 
 class AuditoryTableViewController: UITableViewController {
+    
+    var myClass = OwlClass()
 
     override func viewDidLoad() {
         super.viewDidLoad()
