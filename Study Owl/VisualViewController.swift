@@ -30,10 +30,19 @@ class VisualViewController: UIViewController {
         dvc.myClass = self.myClass
         self.present(dvc, animated: true, completion: nil)
     }
-  
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let dvc = segue.destination as! VisualTableViewController
-//        dvc.myClass = self.myClass
-//    }
+    @IBAction func onScienceTapped(_ sender: Any) {
+        myClass.name = "science"
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "VisualTableViewController") as! VisualTableViewController
+        dvc.myClass = self.myClass
+        self.present(dvc, animated: true, completion: nil)
+    }
+    
+    @IBAction func onSocialStudiesTapped(_ sender: Any) {
+        myClass.name = "socialStudies"
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "VisualTableViewController") as! VisualTableViewController
+        dvc.myClass = self.myClass
+        self.present(dvc, animated: true, completion: nil)
+    }
+    
 }
