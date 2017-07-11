@@ -8,6 +8,7 @@
 
 import UIKit
 import SafariServices
+
 class VisualTableViewController: UITableViewController {
     
    var myClass = ""
@@ -16,6 +17,7 @@ class VisualTableViewController: UITableViewController {
     let english = ["https://quizlet.com"]
     let socialStudies = ["https://bing.com"]
     let mathTitles = ["Order of Operations Worksheet", "Order of Operations Picture Lesson"]
+    var url = ""
     
     var subject = [String]()
     
@@ -28,16 +30,8 @@ class VisualTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var url = ""
-        var row = 0
-        
-        for websites in math
-        {
-            url = math[row]
-            row += 1
-        }
-        
-        UIApplication.shared.openURL(URL(string: url)!)
+        url = math[indexPath.row]
+        UIApplication.shared.openURL(URL(string : url)!)
     }
     
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
