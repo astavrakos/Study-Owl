@@ -16,6 +16,9 @@
 		63C3BAD91F12FD2300AC2B8C /* Study_OwlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3BAD81F12FD2300AC2B8C /* Study_OwlUITests.swift */; };
 		63C3BAE71F15548200AC2B8C /* AuditoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3BAE61F15548200AC2B8C /* AuditoryViewController.swift */; };
 		63C3BAEB1F155A4D00AC2B8C /* OwlClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3BAEA1F155A4D00AC2B8C /* OwlClass.swift */; };
+		63C3BAED1F155E1900AC2B8C /* AuditoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3BAEC1F155E1900AC2B8C /* AuditoryTableViewController.swift */; };
+		63C3BAEF1F155EA100AC2B8C /* KinestheticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3BAEE1F155EA100AC2B8C /* KinestheticTableViewController.swift */; };
+		63C3BAF11F155EB600AC2B8C /* KinestheticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3BAF01F155EB600AC2B8C /* KinestheticViewController.swift */; };
 		F340D34A1F15172100846D68 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340D3491F15172100846D68 /* TableViewCell.swift */; };
 		F3F876D71F1407B500D57FDD /* VisualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F876D61F1407B500D57FDD /* VisualViewController.swift */; };
 		F3F876D91F14080400D57FDD /* VisualTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F876D81F14080400D57FDD /* VisualTableViewController.swift */; };
@@ -54,6 +57,9 @@
 		63C3BADA1F12FD2300AC2B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63C3BAE61F15548200AC2B8C /* AuditoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditoryViewController.swift; sourceTree = "<group>"; };
 		63C3BAEA1F155A4D00AC2B8C /* OwlClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwlClass.swift; sourceTree = "<group>"; };
+		63C3BAEC1F155E1900AC2B8C /* AuditoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditoryTableViewController.swift; sourceTree = "<group>"; };
+		63C3BAEE1F155EA100AC2B8C /* KinestheticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinestheticTableViewController.swift; sourceTree = "<group>"; };
+		63C3BAF01F155EB600AC2B8C /* KinestheticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinestheticViewController.swift; sourceTree = "<group>"; };
 		F340D3491F15172100846D68 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F3F876D61F1407B500D57FDD /* VisualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualViewController.swift; sourceTree = "<group>"; };
 		F3F876D81F14080400D57FDD /* VisualTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualTableViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +116,9 @@
 				63C3BAB81F12FD2300AC2B8C /* AppDelegate.swift */,
 				63C3BABA1F12FD2300AC2B8C /* ViewController.swift */,
 				63C3BABC1F12FD2300AC2B8C /* Main.storyboard */,
+				63C3BAEE1F155EA100AC2B8C /* KinestheticTableViewController.swift */,
+				63C3BAF01F155EB600AC2B8C /* KinestheticViewController.swift */,
+				63C3BAEC1F155E1900AC2B8C /* AuditoryTableViewController.swift */,
 				63C3BAE61F15548200AC2B8C /* AuditoryViewController.swift */,
 				F340D3491F15172100846D68 /* TableViewCell.swift */,
 				F3F876D81F14080400D57FDD /* VisualTableViewController.swift */,
@@ -276,10 +285,13 @@
 			files = (
 				F340D34A1F15172100846D68 /* TableViewCell.swift in Sources */,
 				F3F876D71F1407B500D57FDD /* VisualViewController.swift in Sources */,
+				63C3BAEF1F155EA100AC2B8C /* KinestheticTableViewController.swift in Sources */,
 				F3F876D91F14080400D57FDD /* VisualTableViewController.swift in Sources */,
 				63C3BABB1F12FD2300AC2B8C /* ViewController.swift in Sources */,
+				63C3BAED1F155E1900AC2B8C /* AuditoryTableViewController.swift in Sources */,
 				63C3BAEB1F155A4D00AC2B8C /* OwlClass.swift in Sources */,
 				63C3BAB91F12FD2300AC2B8C /* AppDelegate.swift in Sources */,
+				63C3BAF11F155EB600AC2B8C /* KinestheticViewController.swift in Sources */,
 				63C3BAE71F15548200AC2B8C /* AuditoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

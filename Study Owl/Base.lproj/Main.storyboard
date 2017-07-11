@@ -86,6 +86,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rQ-y8-n2i">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="xgV-8p-Ldg" kind="show" id="eEP-G2-BpE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -298,7 +305,179 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKI-VN-mjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2089" y="750"/>
+            <point key="canvasLocation" x="2063" y="771"/>
+        </scene>
+        <!--Kinesthetic Table View Controller-->
+        <scene sceneID="YeI-rq-LNX">
+            <objects>
+                <tableViewController storyboardIdentifier="KinestheticTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ohG-hc-neo" customClass="KinestheticTableViewController" customModule="Study_Owl" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XcM-5T-P06">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Eja-j8-g8p">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eja-j8-g8p" id="evM-9a-gVi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ohG-hc-neo" id="wYW-29-6Mz"/>
+                            <outlet property="delegate" destination="ohG-hc-neo" id="rZG-v0-iPa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmK-pd-EtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="1614"/>
+        </scene>
+        <!--Kinesthetic View Controller-->
+        <scene sceneID="jhn-il-gDT">
+            <objects>
+                <viewController storyboardIdentifier="KinestheticViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xgV-8p-Ldg" customClass="KinestheticViewController" customModule="Study_Owl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T3h-Qz-NN5"/>
+                        <viewControllerLayoutGuide type="bottom" id="pEs-2c-vGP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EMX-L5-1jo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owlBackground" translatesAutoresizingMaskIntoConstraints="NO" id="qY1-Z6-J4H">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXg-am-Do1">
+                                <rect key="frame" x="117" y="138" width="141" height="38"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="TB7-vk-m4a"/>
+                                    <constraint firstAttribute="height" constant="38" id="nP0-Fp-ll1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                                <state key="normal" title="Math">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmM-eH-yqi">
+                                <rect key="frame" x="117" y="224" width="141" height="55"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EU1-r3-f0z">
+                                <rect key="frame" x="117" y="329" width="141" height="55"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                                <state key="normal" title="Science">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsw-LY-JsL">
+                                <rect key="frame" x="83" y="430" width="208" height="55"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                                <state key="normal" title="Social Studies">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L1-ML-q4c">
+                                <rect key="frame" x="13" y="575" width="349" height="55"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
+                                <state key="normal" title="Tips for Visual Learners">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bXg-am-Do1" firstAttribute="leading" secondItem="QmM-eH-yqi" secondAttribute="leading" id="0CL-ch-Y62"/>
+                            <constraint firstItem="pEs-2c-vGP" firstAttribute="top" secondItem="0L1-ML-q4c" secondAttribute="bottom" constant="37" id="4in-iK-m2P"/>
+                            <constraint firstItem="EU1-r3-f0z" firstAttribute="centerX" secondItem="tsw-LY-JsL" secondAttribute="centerX" id="7QC-sS-Nu8"/>
+                            <constraint firstItem="bXg-am-Do1" firstAttribute="top" secondItem="T3h-Qz-NN5" secondAttribute="bottom" constant="74" id="8SQ-7B-J4w"/>
+                            <constraint firstItem="qY1-Z6-J4H" firstAttribute="top" secondItem="T3h-Qz-NN5" secondAttribute="bottom" id="8ao-Hn-xhG"/>
+                            <constraint firstItem="qY1-Z6-J4H" firstAttribute="centerX" secondItem="tsw-LY-JsL" secondAttribute="centerX" id="9iz-xW-pWp"/>
+                            <constraint firstItem="qY1-Z6-J4H" firstAttribute="bottom" secondItem="pEs-2c-vGP" secondAttribute="top" id="AJ8-1T-ctc"/>
+                            <constraint firstItem="tsw-LY-JsL" firstAttribute="centerX" secondItem="0L1-ML-q4c" secondAttribute="centerX" id="BiB-gh-sFq"/>
+                            <constraint firstItem="QmM-eH-yqi" firstAttribute="leading" secondItem="EU1-r3-f0z" secondAttribute="leading" id="EWU-J4-Yhy"/>
+                            <constraint firstItem="qY1-Z6-J4H" firstAttribute="leading" secondItem="EMX-L5-1jo" secondAttribute="leading" id="HSe-jF-tXC"/>
+                            <constraint firstItem="bXg-am-Do1" firstAttribute="trailing" secondItem="QmM-eH-yqi" secondAttribute="trailing" id="LP4-V4-zQQ"/>
+                            <constraint firstItem="EU1-r3-f0z" firstAttribute="top" secondItem="QmM-eH-yqi" secondAttribute="bottom" constant="50" id="OyX-Fl-u57"/>
+                            <constraint firstItem="QmM-eH-yqi" firstAttribute="top" secondItem="bXg-am-Do1" secondAttribute="bottom" constant="48" id="Z0V-Qd-nlh"/>
+                            <constraint firstItem="tsw-LY-JsL" firstAttribute="top" secondItem="EU1-r3-f0z" secondAttribute="bottom" constant="46" id="aDo-Ti-TG0"/>
+                            <constraint firstItem="QmM-eH-yqi" firstAttribute="trailing" secondItem="EU1-r3-f0z" secondAttribute="trailing" id="oJy-Vg-v1m"/>
+                            <constraint firstAttribute="trailing" secondItem="qY1-Z6-J4H" secondAttribute="trailing" id="wSv-Nz-Hj2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w80-t0-PXN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWk-IO-7a9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="994"/>
+        </scene>
+        <!--Auditory Table View Controller-->
+        <scene sceneID="44V-sx-Cl6">
+            <objects>
+                <tableViewController storyboardIdentifier="AuditoryTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Xb-FS-ljh" customClass="AuditoryTableViewController" customModule="Study_Owl" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5F3-DX-3vU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5cx-73-XQG">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5cx-73-XQG" id="2CD-hh-zuU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1Xb-FS-ljh" id="acD-kF-ttQ"/>
+                            <outlet property="delegate" destination="1Xb-FS-ljh" id="kLz-Ew-3HJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XlF-Z9-KD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="750"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5rm-ky-wo4">
+            <objects>
+                <viewController id="aeY-k9-rh2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QbL-cN-arY"/>
+                        <viewControllerLayoutGuide type="bottom" id="EJM-e7-dQ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KRU-fQ-Qnv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTF-6A-02O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVF-tU-X23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3665" y="750"/>
         </scene>
         <!--Visual Table View Controller-->
         <scene sceneID="0x2-XH-Kzy">
@@ -375,6 +554,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8LX-Ir-hd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l9q-f4-DLl">
+            <objects>
+                <viewController id="Qtq-0H-ZWN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iek-BQ-EqV"/>
+                        <viewControllerLayoutGuide type="bottom" id="hQU-ch-Ag7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mO2-ps-k1S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0R-zQ-0mv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jF-0v-0kq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2684" y="1613"/>
         </scene>
     </scenes>
     <resources>
