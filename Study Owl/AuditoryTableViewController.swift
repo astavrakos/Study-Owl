@@ -78,10 +78,21 @@ class AuditoryTableViewController: UITableViewController {
             }
             UIApplication.shared.openURL(URL(string : url)!)
         }
+        else if myClass.name == "science"
+        {
+            for _ in science
+            {
+                url = science[indexPath.row]
+            }
+            UIApplication.shared.openURL(URL(string : url)!)
+        }
         else
         {
-            url = "https://google.com"
-            UIApplication.shared.openURL(URL(string : url)!)
+            for _ in socialStudies
+            {
+                url = socialStudies[indexPath.row]
+            }
+             UIApplication.shared.openURL(URL(string : url)!)
         }
     }
     
@@ -95,6 +106,14 @@ class AuditoryTableViewController: UITableViewController {
         else if myClass.name == "english"
         {
             cell.textLabel?.text = englishTitles[indexPath.row]
+        }
+        else if myClass.name == "science"
+        {
+            cell.textLabel?.text = scienceTitles[indexPath.row]
+        }
+        else
+        {
+            cell.textLabel?.text = socialStudiesTitles[indexPath.row]
         }
         return cell
     }
