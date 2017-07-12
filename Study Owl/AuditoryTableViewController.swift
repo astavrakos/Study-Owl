@@ -22,8 +22,8 @@ class AuditoryTableViewController: UITableViewController {
     let english = ["http://www.corestandards.org/ELA-Literacy/W/6/", "https://quizlet.com/120732897/6th-grade-common-core-vocabulary-flash-cards/", "http://www.audible.com/t2/freetrial6?source_code=GO1GBSH07111690BP&mkwid=s2aJSKgZd_dc&pcrid=205747869292&pmt=b&pkw=%2Bbook%20%2Baudio&cvosrc=ppc.google.%2Bbook%20%2Baudio&cvo_campaign=224869569&cvo_crid=205747869292&Matchtype=b&gclid=Cj0KCQjw7pHLBRDqARIsAFyKPa4hHz18g2PV_grPIXKGWpPYZukdO8MjFdmvWMARfw5Dx2WZSdKdTSYaAua9EALw_wcB"]
     let englishTitles = ["Common Core Standards", "Vocabulary and Concepts", "Find Audio Recordings of Classroom Books"]
     
-    let socialStudies = ["https://bing.com"]
-    let socialStudiesTitles = [""]
+    let socialStudies = ["https://www.youtube.com/watch?v=KdtgX9ORiW4&list=PLEB3FEDFBFCECD098", "https://www.youtube.com/watch?v=WP_NeirFIkM&index=2&list=PLEB3FEDFBFCECD098", "https://www.youtube.com/watch?v=iMzNPEHNxcc&list=PLEB3FEDFBFCECD098&index=3", "https://www.youtube.com/watch?v=Cg8psGEqLn4", "https://www.youtube.com/watch?v=ancuYECRGN8"]
+    let socialStudiesTitles = ["Ancient Egypt", "Greek Gods", "Greek Goddesses", "Colonization in America Audiobook", "US Geography Fun Facts"]
     
     var url = ""
     var subject = [String]()
