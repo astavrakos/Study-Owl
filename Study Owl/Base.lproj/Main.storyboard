@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kyb-zI-Xf7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kyb-zI-Xf7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -161,6 +161,13 @@
                                     <constraint firstAttribute="width" constant="100" id="Lps-kb-Abq"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="EE4-vr-lvN">
+                                <rect key="frame" x="0.0" y="608" width="64" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="7Qj-vs-ajD"/>
+                                    <constraint firstAttribute="width" constant="64" id="jrI-zr-I9r"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -174,6 +181,8 @@
                             <constraint firstItem="Hq9-T0-0w2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PWP-eD-qLe"/>
                             <constraint firstAttribute="trailing" secondItem="Hq9-T0-0w2" secondAttribute="trailing" id="btc-3v-raj"/>
                             <constraint firstItem="I0l-uo-moT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="32.5" id="f0P-lb-WUg"/>
+                            <constraint firstItem="EE4-vr-lvN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-155.5" id="gd2-lg-bcq"/>
+                            <constraint firstItem="EE4-vr-lvN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="312.5" id="iGn-lz-Ssc"/>
                             <constraint firstItem="9H2-0F-3WA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-117.5" id="p6M-yK-jvZ"/>
                             <constraint firstItem="Pmj-zB-qXl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9H-Cs-oxy"/>
                         </constraints>
@@ -462,7 +471,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eja-j8-g8p" id="evM-9a-gVi">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -606,7 +615,7 @@
                                 <rect key="frame" x="20" y="126" width="335" height="533"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88812658629441621" green="0.88812658629441621" blue="0.88812658629441621" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -683,7 +692,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5cx-73-XQG" id="2CD-hh-zuU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -750,7 +759,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FVM-Lu-c6A" id="MhN-4k-gzK">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <gestureRecognizers/>
@@ -842,6 +851,7 @@
         <image name="ear" width="185" height="272"/>
         <image name="eye" width="600" height="600"/>
         <image name="hand" width="1598" height="1600"/>
+        <image name="owl" width="338" height="400"/>
         <image name="owlBackground" width="2250" height="4000"/>
     </resources>
 </document>
