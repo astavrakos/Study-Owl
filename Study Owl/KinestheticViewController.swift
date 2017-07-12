@@ -9,27 +9,53 @@
 import UIKit
 
 class KinestheticViewController: UIViewController {
-
+    
+    
+    var myClass = OwlClass()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    @IBAction func onMathTapped(_ sender: Any) {
+        myClass.name = "math"
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "KinestheticTableViewController") as! KinestheticTableViewController
+        dvc.myClass = self.myClass
+        self.present(dvc, animated: true, completion: nil)
     }
-    */
-
+    
+    @IBAction func onEnglishTapped(_ sender: Any) {
+        myClass.name = "english"
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "KinestheticTableViewController") as! KinestheticTableViewController
+        dvc.myClass = self.myClass
+        self.present(dvc, animated: true, completion: nil)
+    }
+   
+   
+    @IBAction func onScienceTapped(_ sender: Any) {
+        myClass.name = "science"
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "KinestheticTableViewController") as! KinestheticTableViewController
+        dvc.myClass = self.myClass
+        self.present(dvc, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func onSocialStudiesTapped(_ sender: Any) {
+        myClass.name = "socialStudies"
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "KinestheticTableViewController") as! KinestheticTableViewController
+        dvc.myClass = self.myClass
+        self.present(dvc, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
