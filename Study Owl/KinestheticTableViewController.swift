@@ -18,8 +18,8 @@ class KinestheticTableViewController: UITableViewController {
     let science = ["https://sciencebob.com/category/experiments/", "http://www.ssww.com/item/common-core-collaborative-cards-exponent-equations-grades-LR3109/?aid=GOG&cid=3294&oc=W3355&utm_campaign=pla&utm_medium=cpc&utm_source=google&utm_content=LR3109&gclid=CjwKEAjwqIfLBRCk6vH_rJq7yD0SJACG18fr54xs6VmnZBefageFb9bCUVwjkSeHocVXhyhcWa9GKxoC5tfw_wcB"]
     let scienceTitles = ["Experiments you can try at home (with explanations)",]
     
-    let english = ["http://www.scholastic.com/parents/books-and-reading/book-lists-and-recommendations/ages-11-13", ]
-    let englishTitles = ["Free reading book recommendations"]
+    let english = ["http://www.scholastic.com/parents/books-and-reading/book-lists-and-recommendations/ages-11-13", "https://prezi.com/xy1arpt4nimu/kinesthetic-learners-in-the-english-classroom/"]
+    let englishTitles = ["Free reading book recommendations", "For parents: A Kinesthetic Learner in the English Classroom"]
     
     let socialStudies = ["https://quizlet.com/130932105/introduction-to-world-geography-and-culture-flash-cards/",
                          
