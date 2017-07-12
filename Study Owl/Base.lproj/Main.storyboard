@@ -463,6 +463,11 @@
                                             <action selector="onXTapped:" destination="ohG-hc-neo" id="5aT-8z-tSh"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="VWB-hz-T1R">
+                                        <connections>
+                                            <action selector="onEditTapped:" destination="ohG-hc-neo" id="GE0-4H-QAt"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </navigationItem>
                             </items>
                         </navigationBar>
@@ -682,6 +687,11 @@
                                     <barButtonItem key="leftBarButtonItem" systemItem="stop" id="P5x-qM-VBS">
                                         <connections>
                                             <action selector="onXTapped:" destination="1Xb-FS-ljh" id="4JO-MT-IaU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="HUO-Kg-aE4">
+                                        <connections>
+                                            <action selector="onEditTapped:" destination="1Xb-FS-ljh" id="grP-ia-Wmj"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
