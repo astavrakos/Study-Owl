@@ -10,6 +10,7 @@ import UIKit
 
 class EventsTableViewController: UITableViewController {
 
+    var eventsArray = [""]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,24 +21,41 @@ class EventsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return eventsArray.count
+    }
+    
+    
+    
+    func insertNewEvent(_ sender: Any)
+    {
+        let alert = UIAlertController(title: "Add Event", message: nil, preferredStyle: .alert)
+        alert.addTextField{ (textField) in
+            textField.placeholder = "Title"
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+         let insertAction = UIAlertAction(title: "Add", style: .default) { (action) in
+            self.eventsArray.append((alert.textFields![0]).text!)
+            self.tableView.reloadData()
+        }
+        alert.addAction(insertAction)
+        present(alert, animated: true, completion: nil)
+        self.tableView.reloadData()
+        
     }
 
     @IBAction func onAddTapped(_ sender: Any) {
-        //insertNewEvent(Any)
+        insertNewEvent((Any).self)
+        self.tableView.reloadData()
+    }
+    
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = eventsArray[indexPath.row]
+        return cell
     }
 }

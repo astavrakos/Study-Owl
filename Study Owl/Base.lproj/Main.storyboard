@@ -218,7 +218,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="My Events" id="0ks-j6-9FR">
+                                <navigationItem title="My To-Do List" id="0ks-j6-9FR">
                                     <barButtonItem key="rightBarButtonItem" systemItem="add" id="qyz-hp-OYh">
                                         <connections>
                                             <action selector="onAddTapped:" destination="tdo-P5-8b4" id="45u-Xa-Ph1"/>
@@ -228,7 +228,7 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KLK-DT-o1S">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KLK-DT-o1S">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KLK-DT-o1S" id="056-c7-mkm">
