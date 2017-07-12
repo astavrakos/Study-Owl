@@ -262,6 +262,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="deZ-dl-tLp" kind="show" id="6AP-Ao-OTp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -288,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7j-eZ-j5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1927" y="-121"/>
+            <point key="canvasLocation" x="2065" y="-279"/>
         </scene>
         <!--Auditory View Controller-->
         <scene sceneID="MBE-GB-Ku3">
@@ -358,13 +361,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEt-MR-fRt">
-                                <rect key="frame" x="13" y="575" width="349" height="55"/>
+                                <rect key="frame" x="16" y="580" width="343" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
-                                <state key="normal" title="Tips for Visual Learners">
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
+                                <state key="normal" title="Tips for Auditory Learners">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bvu-1y-HZs" kind="show" id="nvG-1M-g03"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -391,7 +397,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKI-VN-mjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063" y="771"/>
+            <point key="canvasLocation" x="1873" y="689"/>
+        </scene>
+        <!--Tips Auditory View Controller-->
+        <scene sceneID="Mx2-Mu-YVi">
+            <objects>
+                <viewController id="bvu-1y-HZs" customClass="TipsAuditoryViewController" customModule="Study_Owl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fU5-XV-Apt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ain-CD-eNq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dms-Qi-BZg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study Tips for Auditory Learners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF6-Oe-utQ">
+                                <rect key="frame" x="75" y="28" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tOg-oW-X67">
+                                <rect key="frame" x="25" y="57" width="325" height="581"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84353188451776651" green="0.84353188451776651" blue="0.84353188451776651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tipsAuditoryTextField" destination="tOg-oW-X67" id="bAZ-9Y-7Fo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUL-fP-zbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="1101"/>
         </scene>
         <!--Kinesthetic Table View Controller-->
         <scene sceneID="YeI-rq-LNX">
@@ -432,7 +475,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmK-pd-EtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="1639"/>
+            <point key="canvasLocation" x="2585" y="1870"/>
         </scene>
         <!--Kinesthetic View Controller-->
         <scene sceneID="jhn-il-gDT">
@@ -502,13 +545,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L1-ML-q4c">
-                                <rect key="frame" x="13" y="575" width="349" height="55"/>
+                                <rect key="frame" x="16" y="582" width="342" height="48"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
-                                <state key="normal" title="Tips for Visual Learners">
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <state key="normal" title="Tips for Kinesthetic Learners">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sdm-8T-Q1N" kind="show" id="Ume-XW-qmD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -535,7 +581,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWk-IO-7a9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="994"/>
+            <point key="canvasLocation" x="1872.8" y="2251.1244377811095"/>
+        </scene>
+        <!--Tips Kinesthetic View Controller-->
+        <scene sceneID="79c-nL-04H">
+            <objects>
+                <viewController id="sdm-8T-Q1N" customClass="TipsKinestheticViewController" customModule="Study_Owl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UVm-FO-U6E"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eb1-0d-GJn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HK1-Ac-sxT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study Tips for Kinesthetic Learners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWN-WD-YCM">
+                                <rect key="frame" x="63" y="84" width="269" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XZm-gO-bwN">
+                                <rect key="frame" x="20" y="126" width="335" height="533"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88812658629441621" green="0.88812658629441621" blue="0.88812658629441621" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tipsKinestheticTextView" destination="XZm-gO-bwN" id="w2h-lU-jmj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOD-Le-W8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2584.8000000000002" y="2631.6341829085459"/>
+        </scene>
+        <!--Tips Visual View Controller-->
+        <scene sceneID="1EG-DR-lOY">
+            <objects>
+                <viewController id="deZ-dl-tLp" customClass="TipsVisualViewController" customModule="Study_Owl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fun-dg-03l"/>
+                        <viewControllerLayoutGuide type="bottom" id="xei-M1-d5v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gZx-nA-x0N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study Tips for Visual Learners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BK-u8-vRj">
+                                <rect key="frame" x="30" y="83" width="315" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="                                               " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z3q-vf-bnQ">
+                                <rect key="frame" x="23" y="138" width="329" height="498"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84045843908629436" green="0.84045843908629436" blue="0.84045843908629436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="visualTipsTextView" destination="z3q-vf-bnQ" id="i70-1N-rap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXV-vd-mnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2766" y="-204"/>
         </scene>
         <!--Auditory Table View Controller-->
         <scene sceneID="44V-sx-Cl6">
@@ -576,7 +696,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XlF-Z9-KD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2849" y="750"/>
+            <point key="canvasLocation" x="2644" y="438"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5rm-ky-wo4">
@@ -601,7 +721,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVF-tU-X23" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3665" y="750"/>
+            <point key="canvasLocation" x="3386" y="438"/>
         </scene>
         <!--Visual Table View Controller-->
         <scene sceneID="0x2-XH-Kzy">
@@ -647,7 +767,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpM-p8-Phk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="-59"/>
+            <point key="canvasLocation" x="2767" y="-949"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="900-Uv-oyh">
@@ -672,7 +792,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L33-S3-t3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3664.8000000000002" y="-164.16791604197903"/>
+            <point key="canvasLocation" x="3609" y="-457"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oki-pg-ET8">
@@ -715,7 +835,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jF-0v-0kq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="1613"/>
+            <point key="canvasLocation" x="3444" y="1885"/>
         </scene>
     </scenes>
     <resources>
