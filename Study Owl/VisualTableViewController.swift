@@ -13,8 +13,8 @@ class VisualTableViewController: UITableViewController {
     
     var myClass = OwlClass()
     
-    let math = ["http://www.commoncoresheets.com/Operations.php", "http://www.coolmath.com/prealgebra/05-order-of-operations/05-order-of-operations-parenthesis-PEMDAS-04", "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations", "http://www.commoncoresheets.com/Math/Variables/Add-Sub%20within%20100/English/6.pdf", "http://www.shodor.org/interactivate/activities/BarGraph/", "http://www.shodor.org/interactivate/activities/AdjustableSpinner/", "http://www.shodor.org/interactivate/activities/Angles/", "http://www.shodor.org/interactivate/activities/AreaExplorer/", "http://www.shodor.org/interactivate/activities/ArithmeticFour/"]
-    let mathTitles = ["Order of Operations Worksheet", "Order of Operations Picture Lesson", "Arithmetic Operations Videos", "Introduction To Variables Worksheet", "Interactive Bar Graph Activity", "Practice with Probability", "Angles Practice Activity", "Practice with Area", "Arithmetic Review Game"]
+    var math = ["http://www.commoncoresheets.com/Operations.php", "http://www.coolmath.com/prealgebra/05-order-of-operations/05-order-of-operations-parenthesis-PEMDAS-04", "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations", "http://www.commoncoresheets.com/Math/Variables/Add-Sub%20within%20100/English/6.pdf", "http://www.shodor.org/interactivate/activities/BarGraph/", "http://www.shodor.org/interactivate/activities/AdjustableSpinner/", "http://www.shodor.org/interactivate/activities/Angles/", "http://www.shodor.org/interactivate/activities/AreaExplorer/", "http://www.shodor.org/interactivate/activities/ArithmeticFour/"]
+    var mathTitles = ["Order of Operations Worksheet", "Order of Operations Picture Lesson", "Arithmetic Operations Videos", "Introduction To Variables Worksheet", "Interactive Bar Graph Activity", "Practice with Probability", "Angles Practice Activity", "Practice with Area", "Arithmetic Review Game"]
     
     let science = ["https://sciencebob.com/category/experiments/", "https://www.youtube.com/watch?v=LEHR8YQNm_Q&list=PLevTym1mJHsTllKYwJdhqgd4bjoZ_wlUZ", "https://www.youtube.com/playlist?list=PLRSIe0MUxDndmkA4PyU-Zw6mNKVVcIXE8", "https://www.youtube.com/playlist?list=PLRSIe0MUxDne1y4uS2w0H7oIH7w_ZZGts", "https://www.youtube.com/playlist?list=PLRSIe0MUxDncRjJ2vYvsXDU0pDnKObrAD", "https://quizlet.com/167626385/scientific-method-flash-cards/"]
     let scienceTitles = ["Experiments to Try at Home", "Overview of Physics, Biology, and Chemistry", "Smart Learning For All: Physics Reviews", "Smart Learning For All: Biology Reviews", "Smart Learning For All: Chemistry Reviews", "Basic Concepts of the Scientific Method"]
@@ -120,12 +120,43 @@ class VisualTableViewController: UITableViewController {
         return cell
     }
     
+    func insertNewObject(_ sender: Any)
+    {
+        let alert = UIAlertController(title: "Add Resource", message: nil, preferredStyle: .alert)
+            alert.addTextField{ (textField) in
+            textField.placeholder = "Title"
+            }
+            
+            alert.addTextField{ (textField) in
+                textField.placeholder = "URL"
+            }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        
+        let insertAction = UIAlertAction(title: "Add", style: .default) { (action) in
+            if self.myClass.name == "math"
+            {
+                print("hello")
+                self.mathTitles.append((alert.textFields![0]).text!)
+                self.math.append((alert.textFields![1]).text!)
+                self.tableView.reloadData()
+            }
+        }
+        alert.addAction(insertAction)
+        present(alert, animated: true, completion: nil)
+            }
+    
     func returnToPreviousVC()  {
         if let nav = self.navigationController {
             nav.popViewController(animated: true)
         } else {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    @IBAction func onEditTapped(_ sender: Any) {
+        insertNewObject(Any)
+        
     }
     
     @IBAction func onXTapped(_ sender: Any) {

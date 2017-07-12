@@ -751,6 +751,11 @@
                                             <action selector="onXTapped:" destination="qRN-1I-FRR" id="AMf-Cs-cFG"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="17l-91-pjh">
+                                        <connections>
+                                            <action selector="onEditTapped:" destination="qRN-1I-FRR" id="eA3-A5-fDc"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </navigationItem>
                             </items>
                         </navigationBar>
