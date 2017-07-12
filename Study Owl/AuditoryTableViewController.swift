@@ -32,6 +32,7 @@ class AuditoryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       // self.clearsSelectionOnViewWillAppear = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,5 +98,18 @@ class AuditoryTableViewController: UITableViewController {
         }
         return cell
     }
+    
+    func returnToPreviousVC()  {
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func onXTapped(_ sender: Any) {
+        returnToPreviousVC()
+    }
+    
 
 }

@@ -38,6 +38,7 @@ class KinestheticTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.clearsSelectionOnViewWillAppear = false
     }
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -119,5 +120,18 @@ class KinestheticTableViewController: UITableViewController {
             cell.textLabel?.text = socialStudiesTitles[indexPath.row]
         }
         return cell
+    }
+    
+    func returnToPreviousVC()
+    {
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func onXTapped(_ sender: Any) {
+       returnToPreviousVC()
     }
 }
