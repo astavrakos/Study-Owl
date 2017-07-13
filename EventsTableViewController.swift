@@ -46,6 +46,13 @@ class EventsTableViewController: UITableViewController {
         self.tableView.reloadData()
         
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.eventsArray.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 
     @IBAction func onAddTapped(_ sender: Any) {
         insertNewEvent((Any).self)
