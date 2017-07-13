@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6359F68A1F17154500CD8CF1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6359F6891F17154500CD8CF1 /* Realm.framework */; };
+		6359F68B1F17154500CD8CF1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6359F6891F17154500CD8CF1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6359F68E1F17154800CD8CF1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6359F68D1F17154800CD8CF1 /* RealmSwift.framework */; };
+		6359F68F1F17154800CD8CF1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6359F68D1F17154800CD8CF1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63C3BAB91F12FD2300AC2B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3BAB81F12FD2300AC2B8C /* AppDelegate.swift */; };
 		63C3BABB1F12FD2300AC2B8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C3BABA1F12FD2300AC2B8C /* ViewController.swift */; };
 		63C3BABE1F12FD2300AC2B8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C3BABC1F12FD2300AC2B8C /* Main.storyboard */; };
@@ -45,7 +49,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6359F68C1F17154500CD8CF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6359F68F1F17154800CD8CF1 /* RealmSwift.framework in Embed Frameworks */,
+				6359F68B1F17154500CD8CF1 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6359F6891F17154500CD8CF1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		6359F68D1F17154800CD8CF1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		63C3BAB51F12FD2300AC2B8C /* Study Owl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study Owl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C3BAB81F12FD2300AC2B8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C3BABA1F12FD2300AC2B8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6359F68E1F17154800CD8CF1 /* RealmSwift.framework in Frameworks */,
+				6359F68A1F17154500CD8CF1 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +124,8 @@
 		63C3BAAC1F12FD2200AC2B8C = {
 			isa = PBXGroup;
 			children = (
+				6359F68D1F17154800CD8CF1 /* RealmSwift.framework */,
+				6359F6891F17154500CD8CF1 /* Realm.framework */,
 				63C3BAB71F12FD2300AC2B8C /* Study Owl */,
 				63C3BACC1F12FD2300AC2B8C /* Study OwlTests */,
 				63C3BAD71F12FD2300AC2B8C /* Study OwlUITests */,
@@ -171,6 +196,7 @@
 				63C3BAB11F12FD2300AC2B8C /* Sources */,
 				63C3BAB21F12FD2300AC2B8C /* Frameworks */,
 				63C3BAB31F12FD2300AC2B8C /* Resources */,
+				6359F68C1F17154500CD8CF1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -460,6 +486,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Study Owl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lstavrakos.Study-Owl";
@@ -472,6 +502,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Study Owl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lstavrakos.Study-Owl";

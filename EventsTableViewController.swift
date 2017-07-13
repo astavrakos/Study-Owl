@@ -1,3 +1,4 @@
+
 //
 //  EventsTableViewController.swift
 //  Study Owl
@@ -7,18 +8,23 @@
 //
 
 import UIKit
+import RealmSwift
 
 class EventsTableViewController: UITableViewController {
 
-    var eventsArray = [""]
+    var eventsArray = [String]()
+    var objects = [Any]()
+//    let realm = try! Realm()
+//    lazy var events: Results<Object> = {
+//        self.realm.objects(Object.self)
+//    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+//        for event in events {
+//            objects.append(event)
+//        }
     }
 
 
@@ -41,9 +47,14 @@ class EventsTableViewController: UITableViewController {
             self.eventsArray.append((alert.textFields![0]).text!)
             self.tableView.reloadData()
         }
+//        self.objects.append(events)
+//        try! self.realm.write {
+//            self.realm.add(events)
+//        }
+        self.tableView.reloadData()
         alert.addAction(insertAction)
         present(alert, animated: true, completion: nil)
-        self.tableView.reloadData()
+       
         
     }
     
@@ -65,4 +76,5 @@ class EventsTableViewController: UITableViewController {
         cell.textLabel?.text = eventsArray[indexPath.row]
         return cell
     }
+    
 }
